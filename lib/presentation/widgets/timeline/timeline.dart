@@ -138,7 +138,7 @@ class _ThumbnailImage extends ConsumerWidget {
       aspectRatio: isLong ? 0.5 : post.aspectRatio,
       child: ExtendedImage.network(
         // load sample photo when it's above 35:9
-        post.aspectRatio < 0.26 && post.sampleFile.asContent().isPhoto
+        post.sampleFile.asContent().isPhoto
             ? post.sampleFile
             : post.previewFile,
         headers: headers,
